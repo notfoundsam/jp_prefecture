@@ -13,13 +13,23 @@ namespace JpPrefecture;
  */
 class Prefecture
 {
-    public function __construct()
-    {
-        
-    }
+    public $code;
+    public $area;
+    public $nameKanji;
+    public $nameRoman;
+    public $nameHiragana;
+    public $nameKatakana;
 
-    public function find()
+    private $zipRange;
+
+    public function __construct($code, $area, $nameKanji, $nameRoman, $nameHiragana, $nameKatakana, $zipRange)
     {
-        
+        $this->code = $code;
+        $this->area = $area;
+        $this->nameKanji = $nameKanji;
+        $this->nameRoman = $nameRoman;
+        $this->nameHiragana = $nameHiragana;
+        $this->nameKatakan = $nameKatakana;
+        $this->zipRange = $zipRange;
     }
 }

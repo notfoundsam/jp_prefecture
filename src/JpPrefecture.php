@@ -49,11 +49,25 @@ class JpPrefecture
 
     public static function all()
     {
+        $prefectures = [];
+
         foreach (Config::CODES as $k => $v)
         {
-            $this->_prefectures[] = new Prefecture($k, $v['area'], $v['name_kanji'], $v['name_roman'], $v['name_hiragana'], $v['name_katakana'], $v['zip_range']);
+            $prefectures[] = new Prefecture($k, $v['area'], $v['name_kanji'], $v['name_roman'], $v['name_hiragana'], $v['name_katakana'], $v['zip_range']);
         }
 
-        return $this->_prefectures;
+        return $prefectures;
+    }
+
+    public static function allKanjiAndCode()
+    {
+        $prefectures = [];
+
+        foreach (Config::CODES as $k => $v)
+        {
+            $prefectures[$k] = $v['name_kanji'];
+        }
+
+        return $prefectures;
     }
 }

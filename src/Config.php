@@ -1,5 +1,7 @@
 <?php
 
+namespace JpPrefecture;
+
 /**
  * Prefectures names and codes
  * 

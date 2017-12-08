@@ -29,7 +29,7 @@ class Prefecture
         $this->nameKanji = $nameKanji;
         $this->nameRoman = $nameRoman;
         $this->nameHiragana = $nameHiragana;
-        $this->nameKatakan = $nameKatakana;
+        $this->nameKatakana = $nameKatakana;
         $this->zipRange = $zipRange;
     }
 }

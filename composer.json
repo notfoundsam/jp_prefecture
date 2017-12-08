@@ -1,0 +1,21 @@
+{
+    "name": "notfoundsam/jp_prefecture",
+    "type": "library",
+    "description": "Japan Prefecture and zip code converter",
+    "keywords": ["jp", "Japan", "prefecture", "zip", "code", "converter"],
+    "homepage": "https://github.com/notfoundsam/jp_prefecture",
+    "authors": [
+        {
+            "name": "Alexey Zazimko",
+            "homepage": "https://github.com/notfoundsam/jp_prefecture"
+        }
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Cms\\": "src/"
+        }
+    }
+}

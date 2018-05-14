@@ -19,8 +19,7 @@ class Prefecture
     public $nameRoman;
     public $nameHiragana;
     public $nameKatakana;
-
-    private $zipRange;
+    public $zipRange;
 
     public function __construct($code, $area, $nameKanji, $nameRoman, $nameHiragana, $nameKatakana, $zipRange)
     {

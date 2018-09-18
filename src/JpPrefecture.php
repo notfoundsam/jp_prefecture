@@ -39,6 +39,14 @@ class JpPrefecture
 
     public static function findByKanji($kanji)
     {
+        foreach (Config::CODES as $code => $v)
+        {
+            if ($v['name_kanji'] == $kanji)
+            {
+                return new Prefecture($code, $v['area'], $v['name_kanji'], $v['name_roman'], $v['name_hiragana'], $v['name_katakana'], $v['zip_range']);
+            }
+        }
+
         return null;
     }
 
